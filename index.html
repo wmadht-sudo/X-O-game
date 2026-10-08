@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>XO AI - Impossible</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="app">
+
+        <header class="top">
+            <div>
+                <h1>XO <span>AI</span></h1>
+                <p>هل تستطيع هزيمة الذكاء الاصطناعي؟</p>
+            </div>
+
+            <div class="difficulty">
+                <small>المستوى</small>
+                <strong>IMPOSSIBLE</strong>
+            </div>
+        </header>
+
+
+        <section class="scores">
+
+            <div class="score player">
+                <small>أنت</small>
+                <strong id="playerScore">0</strong>
+            </div>
+
+            <div class="score">
+                <small>تعادل</small>
+                <strong id="drawScore">0</strong>
+            </div>
+
+            <div class="score ai">
+                <small>AI</small>
+                <strong id="aiScore">0</strong>
+            </div>
+
+        </section>
+
+
+        <div class="status" id="status">
+            دورك — أنت X
+        </div>
+
+
+        <div class="board" id="board">
+
+            <button class="cell" data-index="0"></button>
+            <button class="cell" data-index="1"></button>
+            <button class="cell" data-index="2"></button>
+
+            <button class="cell" data-index="3"></button>
+            <button class="cell" data-index="4"></button>
+            <button class="cell" data-index="5"></button>
+
+            <button class="cell" data-index="6"></button>
+            <button class="cell" data-index="7"></button>
+            <button class="cell" data-index="8"></button>
+
+        </div>
+
+
+        <div class="thinking" id="thinking">
+            <div class="loader"></div>
+            <span>AI يحلل النقلات...</span>
+        </div>
+
+
+        <button class="new-game" id="newGame">
+            لعبة جديدة
+        </button>
+
+    </div>
+
+
+    <div class="result hidden" id="result">
+
+        <div class="result-box">
+
+            <div class="result-symbol" id="resultSymbol">X</div>
+
+            <h2 id="resultTitle">انتهت اللعبة</h2>
+
+            <p id="resultText"></p>
+
+            <button id="again">
+                العب مرة أخرى
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
